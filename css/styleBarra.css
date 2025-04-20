@@ -21,6 +21,10 @@
 }
 
 img {
+    border: 2px solid #fff;
+    padding: 5px;
+    background-color: #2b036b;
+    border-radius: 50%;
     width: 80px;
     height: 80px;
 }
