@@ -2,40 +2,79 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Bruno Silva, DevOps Júnior e Back-End Python.">
-    <meta name="keywords" content="Bruno Silva, DevOps, Back-End, Python, Portfólio">
-    <meta name="author" content="Bruno Silva">
-    <link rel="stylesheet" href="/styleBase.css">
-    <link rel="stylesheet" href="/styleBarra.css">
-  <title>Portfólio | Bruno Silva</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Bruno Silva, DevOps Júnior e Back-End Python com experiência em Docker, Kubernetes e cloud AWS/Azure">
+  <meta name="keywords" content="DevOps, Python, Back-End, Docker, Kubernetes, AWS, Azure, Portfólio">
+  <meta name="author" content="Bruno Silva">
+  <link rel="stylesheet" href="css/styleBarra.css">
+  <link rel="stylesheet" href="css/styleBase.css">
+  <title>Bruno Silva | DevOps Júnior & Back-End Python</title>
 </head>
 <body>
-    <nav class="menu-barra">
-        <div class="barra">
-            <img src="/img/logoCloudBR.png" width=""alt="Logo">
-            <div class="links">
-                <a href="#sobre">Sobre</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#artigos">Artigos</a>
-                <a href="/contatos.html">Contato</a>
-            </div>
+  <!-- Cabeçalho/Navegação -->
+  <header>
+    <nav class="menu-barra" aria-label="Navegação principal">
+      <div class="barra">
+        <img src="img/logoCloudBR.png" alt="Logo CloudBR - Nuvem com símbolo de tecnologia" width="150">
+        <div class="links">
+          <a href="pages/sobre.html" aria-current="page">Sobre</a>
+          <a href="pages/projetos.html">Projetos</a>
+          <a href="pages/artigos.html">Artigos</a>
+          <a href="pages/contatos.html">Contato</a>
         </div>
+      </div>
     </nav>
-    
-  <h1>Bruno Silva</h1>
-  <p>DevOps Júnior | Back-End Python</p>
-    <p>Tenho experiência em Python, Docker, Kubernetes, Azure e AWS.</p>
-  <h2>Projetos</h2>
-  <ul>
-    <li><a href="https://github.com/brunoezequiel/flask-todo-docker">API Flask + Docker</a></li>
-    <li><a href="https://github.com/brunoezequiel/k8s-monitoring-demo">Kubernetes com Prometheus</a></li>
-    <li><a href="https://github.com/brunoezequiel/django-learning-log">Django Learning Log</a></li>
-    <li><a href="https://github.com/brunoezequiel/django-learning-log">flask Id-Hunter</a></li>
-  </ul>
-  <footer>  <h2>Contato</h2>
-    <p>Email: eps.bruno@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/brunoezequiel</p>
-  </body></footer>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <section aria-labelledby="perfil-titulo">
+      <h1 id="perfil-titulo">Bruno Silva</h1>
+      <p class="subtitulo">DevOps Júnior | Back-End Python</p>
+      <p>Especializado em soluções cloud-native com experiência em:</p>
+      <ul class="habilidades">
+        <li>Python (Flask/Django)</li>
+        <li>Docker e Kubernetes</li>
+        <li>Infraestrutura como código (Terraform)</li>
+        <li>Cloud AWS e Azure</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projetos-titulo">
+      <h2 id="projetos-titulo">Projetos Destacados</h2>
+      <ul class="projetos-lista">
+        <li>
+          <a href="https://github.com/brunoezequiel/flask-todo-docker" target="_blank" rel="noopener">
+            API Flask + Docker
+          </a> - Microsserviço de tarefas com containerização
+        </li>
+        <li>
+          <a href="https://github.com/brunoezequiel/k8s-monitoring-demo" target="_blank" rel="noopener">
+            Kubernetes com Prometheus
+          </a> - Cluster k8s com monitoramento
+        </li>
+        <li>
+          <a href="https://github.com/brunoezequiel/django-learning-log" target="_blank" rel="noopener">
+            Django Learning Log
+          </a> - Aplicação de gerenciamento de aprendizagem
+        </li>
+        <li>
+          <a href="https://github.com/brunoezequiel/flask-id-hunter" target="_blank" rel="noopener">
+            Flask ID Hunter
+          </a> - Ferramenta de análise de dados
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer aria-labelledby="contato-titulo">
+    <h2 id="contato-titulo">Contato</h2>
+    <address>
+      <p>Email: <a href="mailto:eps.bruno@gmail.com">eps.bruno@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/brunoezequiel" target="_blank" rel="noopener noreferrer">linkedin.com/in/brunoezequiel</a></p>
+      <p>GitHub: <a href="https://github.com/brunoezequiel" target="_blank" rel="noopener noreferrer">github.com/brunoezequiel</a></p>
+    </address>
+  </footer>
 </body>
 </html>
