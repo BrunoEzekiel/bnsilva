@@ -1,29 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Bruno Silva, DevOps Júnior e Back-End Python.">
-    <meta name="keywords" content="Bruno Silva, DevOps, Back-End, Python, Portfólio">
-    <meta name="author" content="Bruno Silva">
-    <link rel="stylesheet" href="/styleBase.css">
-    <link rel="stylesheet" href="/styleBarra.css">
-    <title>Contatos</title>
+    <meta name="description" content="Entre em contato com Bruno Silva, DevOps Júnior e Back-End Python">
+    <link rel="stylesheet" href="/css/styleBase.css">
+    <link rel="stylesheet" href="/css/styleBarra.css">
+    <title>Contato | Bruno Silva</title>
 </head>
 <body>
-    <nav class="menu-barra">
+    <nav class="menu-barra" aria-label="Navegação principal">
         <div class="barra">
-            <img src="/img/logoCloudBR.png" width=""alt="Logo">
+            <img src="/img/logoCloudBR.png" width="80" alt="Logo CloudBR - Especialista em soluções cloud">
             <div class="links">
-                <a href="#sobre">Sobre</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#artigos">Artigos</a>
-                <a href="/contatos.html">Contato</a>
+                <a href="/pages/sobre.html">Sobre</a>
+                <a href="/pages/projetos.html">Projetos</a>
+                <a href="#">Artigos</a>
+                <a href="/pages/contatos.html" aria-current="page">Contato</a>
             </div>
         </div>
     </nav>
-<h2>Contato</h2>
-  <p>Email: eps.bruno@gmail.com</p>
-  <p>LinkedIn: linkedin.com/in/brunoezequiel</p>
+
+    <main class="contato-container">
+        <!-- Seção Bio -->
+        <section class="bio" aria-labelledby="bio-titulo">
+            <h2 id="bio-titulo">Minha Jornada</h2>
+            <p>Olá! Sou Bruno Silva, DevOps e Back-End Júnior com foco em soluções Python e infraestrutura cloud. Minha paixão é criar sistemas eficientes que unam desenvolvimento e operações.</p>
+            <ul class="expertise">
+                <li>🛠️ 2+ anos com Python (Flask/Django)</li>
+                <li>☁️ Certificações em AWS e Azure</li>
+                <li>🔧 Experiência em CI/CD e Terraform</li>
+            </ul>
+            <img class="foto-perfil" src="/img/brunoezekiel.jpg"  alt="foto de Bruno Silva" width="200" height="200">
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="form-contato" aria-labelledby="contato-titulo">
+            <h2 id="contato-titulo">Envie uma Mensagem</h2>
+            <form action="https://formsubmit.co/eps.bruno@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://seudominio.com/obrigado.html">
+                
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="proposta">Proposta de Trabalho</option>
+                        <option value="duvida">Dúvida Técnica</option>
+                        <option value="colab">Colaboração</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required aria-required="true"></textarea>
+                </div>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <!-- Contatos Diretos -->
+        <section class="contatos-diretos" aria-labelledby="redes-titulo">
+            <h2 id="redes-titulo">Conecte-se Comigo</h2>
+            <address>
+                <p>📧 <a href="mailto:eps.bruno@gmail.com">eps.bruno@gmail.com</a></p>
+                <p>💼 <a href="https://linkedin.com/in/brunoezequiel" target="_blank" rel="noopener">LinkedIn</a></p>
+                <p>🐙 <a href="https://github.com/brunoezequiel" target="_blank" rel="noopener">GitHub</a></p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Bruno Silva. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
