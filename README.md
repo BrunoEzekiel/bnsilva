@@ -4,6 +4,7 @@ Página HTML/JS para consumir a API de cadastro de e-mails.
 
 ## 🛠️ Tecnologias
 - HTML5
+- CSS
 - JavaScript (Fetch API)
 - Vercel (deploy)
 
