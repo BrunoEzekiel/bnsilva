@@ -1,0 +1,5 @@
+# No .gitignore
+.env
+node_modules/
+*.log
+/img/originals/
