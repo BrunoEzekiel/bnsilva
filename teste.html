@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste API</title>
+</head>
+<body>
+    <h1>Teste de Consumo de API</h1>
+    <button onclick="fetchData()">Chamar API</button>
+    <div id="result"></div>
+
+    <script>
+        async function fetchData() {
+            const API_URL = "http://localhost:8000";  // Altere para sua URL em produção
+            
+            try {
+                // Chamada GET simples
+                const response = await fetch(`${API_URL}/api/hello`);
+                if (!response.ok) {
+                    throw new Error(`Erro HTTP: ${response.status}`);
+                }
+                const data = await response.json();
+                document.getElementById("result").innerHTML = 
+                    `Resposta: ${data.message} | Status: ${data.status}`;
+                
+                // Chamada com parâmetro
+                const responseHello = await fetch(`${API_URL}/api/hello2?name=${encodeURIComponent("Bruno")}`);
+                const helloData = await responseHello.json();
+                console.log("Dados recebidos:", helloData);
+                
+            } catch (error) {
+                console.error("Falha na requisição:", error);
+                document.getElementById("result").innerHTML = "Erro ao chamar API!";
+            }
+        }
+    </script>
+</body>
+</html>
